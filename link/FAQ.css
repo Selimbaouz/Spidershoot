@@ -1,0 +1,287 @@
+/* GENERAL */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+a
+{
+    text-decoration: none;
+    color: #444;
+    font-weight: lighter;
+    font-size: 16px;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+a:hover
+{
+    color: #f25f5c;
+    font-weight: bold;
+}
+li
+{
+    list-style: none;
+    float: left;
+}
+.border_band
+{
+    width: 100px;
+    margin: 10px auto;
+}
+span
+{
+    font-weight: bold;
+}
+.color
+{
+    color: #f25f5c;
+}
+.padding_top
+{
+    padding-top: 20px;
+}
+div h2
+{
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+
+/* GRID LAYOUT */
+
+.container
+{
+    display: grid;
+    grid-template-columns:
+            repeat(5, 1fr);
+
+    grid-template-rows:
+            [header] auto
+            [nav] auto
+            [legalText_title] auto
+            [legalText] auto
+            [footer] auto;
+}
+.header
+{
+    background-color: #484647;
+    grid-column: 1/6;
+    grid-row: 1;
+}
+.nav
+{
+    background-color: white;
+    grid-column: 1/6;
+    grid-row: 2;
+}
+.legalText_title
+{
+    grid-column: 1/6;
+    grid-row: 3;
+}
+.legalText
+{
+    grid-column: 1/6;
+    grid-row: 4;
+}
+.footer
+{
+    grid-column: 1/6;
+    grid-row: 5;
+    background-color: #191819;
+}
+/* HEADER */
+
+.header_container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 33px;
+    border-bottom: 1px solid #777;
+}
+.header-one
+{
+    grid-column: 2/3;
+    grid-row: 1;
+    margin: auto;
+}
+
+div h3
+{
+    color: white;
+    font-size: 13.4px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 6px;
+}
+
+/* NAV */
+
+.nav_container
+{
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: 53px;
+    border-bottom: 1px solid #777;
+}
+.nav-one
+{
+    margin: auto;
+}
+.nav-two
+{
+    margin: auto;
+}
+.nav-three
+{
+    margin: auto;
+}
+#logo
+{
+    width: 50px;
+    height: 50px;
+}
+#cart
+{
+    width: 25px;
+    height: 25px;
+}
+/* LEGALTEXT */
+
+.legalText_container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-bottom: 30px;
+}
+.legalText-one
+{
+    grid-column: 1/2;
+    grid-row: 1;
+    margin: auto;
+}
+.legalText_text_p
+{
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: lighter;
+    padding: 0 380px 35px 380px;
+    text-align: left;
+    color: black;
+}
+.bouton1
+{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    padding:20px;
+    display: block;
+    margin:auto;
+    font-size: 16px;
+}
+.bouton1:hover
+{
+    background-color: white;
+}
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child
+{
+    display: none;
+    min-width: 50px;
+}
+.dropdown-child p
+{
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+/* FOOTER */
+
+.footer_container
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    padding: 50px 30px 50px 30px;
+}
+.footer-one
+{
+    grid-column: 1/2;
+    grid-row: 1;
+}
+.footer-two
+{
+    grid-column: 2/3;
+    grid-row: 1;
+}
+.footer-three
+{
+    grid-column: 3/4;
+    grid-row: 1;
+
+}
+.footer h1
+{
+    padding-top: 20px;
+    padding-right: 75px;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: none;
+    color: white;
+}
+.footer a
+{
+    font-size: 15px;
+    line-height: 25px;
+    color: white;
+    text-transform: none;
+}
+.footer a:hover
+{
+    color: #f25f5c;
+    font-weight: lighter;
+}
+.footer p
+{
+    padding-right: 75px;
+    color: white;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+}
+.mail
+{
+    padding: 10px;
+    width: 220px;
+    font-size: 15px;
+    border: none;
+}
+.valid
+{
+    padding: 10px;
+    border: none;
+    background-color: #f25f5c;
+    color: white;
+    border-radius: 10px;
+    width: 140px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
